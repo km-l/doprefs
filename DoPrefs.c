@@ -16,7 +16,7 @@ static __chip UWORD ptrData[6];
 int main()
 {
 	if(SysBase->LibNode.lib_Version < OS_20)
-    	Quit("This program requires OS2.0 or higher.");
+		Quit("This program requires OS2.0 or higher.");
 
 	if(!(PlayerPrefsBase=(struct Library*)OpenLibrary("playerprefs.library", 0)))
 		Quit("Playerprefs library will not open!");
